@@ -1,10 +1,22 @@
 import React from 'react';
+import DashboardCard from './dashboard/DashboardCard.js'
+import { Grid } from "@material-ui/core";
+import Content from './dashboard/DashboardContent';
 
 function DashBoard()
 {
-    return(<div className="DashBoard" >
-        <main className="dashboard">Dashboard</main>
-        </div>)
+    return (
+    <Grid container direction="column">
+      <Grid item container>
+        <Grid item xs={false} sm={2} />
+        <Grid item xs={12} sm={8}>
+          <h2>Content</h2>
+        //<Content />
+        </Grid>
+        <Grid item xs={false} sm={2} />
+      </Grid>
+    </Grid>
+  );
     
 }
 export default DashBoard

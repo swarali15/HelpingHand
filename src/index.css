@@ -6,7 +6,7 @@ body
 }
 .app
 {
-    display: block;
+    display: flex;
 }
 .navbar
 {   padding: 15px;
@@ -51,21 +51,21 @@ body
     font-size: 15px;
 }
 .batterySidebar
-{
-    height: 100%;
-    width: 100%;
+{   margin-top:0;
     background-color: #414831;
+    margin-left: 69px;
+    width: 70px;
+    height: 9000px;
 }
 .batteries-container
-{   height: 100%;
+{   
     
-    margin-left: 65px;
-    width: 70px;
    
 }
 .battery-link
-{    height: 100%;
+{   
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
+    width: 80px;
     
 }

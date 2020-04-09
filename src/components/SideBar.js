@@ -1,39 +1,45 @@
 import React from 'react';
 import Sidebar from "react-sidebar";
 import Batteries from "./Batteries"
+import ReactDom from 'react-dom'
 
   class SideBar extends React.Component {
-      constructor() {
+      constructor() 
+  {
     super();
     this.state = {
       showComponent: false,
     };
-    this._onButtonClick = this._onButtonClick.bind(this);
+    this.onBatteriesClick = this.onBatteriesClick.bind(this);
   }
       
-_onButtonClick() {
-    this.setState({
-      showComponent: true,
-    });
+onBatteriesClick() {
+    this.setState({showComponent: true});
   }
  
+accessBatery =()=>{
+    if(!this.setState.showComponent)
+        return;
+    else
+    this.refs.child.renderBattery();
+    
+}
 render() {
     
-    return (<div className="sidebar-container">
+    return (
+    <div className="sidebar-container">
        <div className="sidebar-link">Dashboard</div>
-            
-    <div>
-       <div className="sidebar-link batteryId" onClick={this._onButtonClick}>Batteries</div>
-            {this.state.showComponent ?
-           <Batteries /> :
-           null
-        }
-    </div>
-    
+       <div className="sidebar-link batteryId" onClick={this.onBatteriesClick}>Batteries</div>
        <div className="sidebar-link">Settings</div>
-        </div>)
-           
-  }
+        <Batteries ref='child'/>
+    </div>      
+  )
 }
+  }
+
+    
+
+
+            
      
 export default SideBar
