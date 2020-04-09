@@ -1,38 +1,68 @@
 export default [
   {
-    title: "1",
+    title: "Battery Percent",
     
-    description:"mv"
+    description:"%"
       
   },
   {
-    title: "2",
+    title: "Battery Voltage",
     
-    description:"mv"
+    description:"Volts"
       
   },
   {
-    title: "3",
+    title: "Battery Current",
+    
+    description:"mA"
+     
+  },
+  {
+    title: "Battery Temperature",
+    
+    description:"C"
+      
+  },
+  {
+    title: "Lowest cell voltage",
+    
+    description:"V"
+      
+  },
+ {
+    title: "Max cell voltage",
+    
+    description:"V"
+     
+  },
+    {
+    title: "Capacity left",
+    
+    description:"Ah"
+     
+  },
+{
+    title: "Max Discharged current",
+    
+    description:"mA"
+     
+  },
+    {
+    title: "Battery Status",
+    
+    description:"Charging"
+     
+  },
+    {
+    title: "Cell Voltage",
     
     description:"mv"
      
   },
-  {
-    title: "4",
+    {
+    title: "Errors",
     
-    description:"mv"
-      
-  },
-  {
-    title: "5",
-    
-    description:"mv"
-      
-  },
- {
-    title: "6",
-    
-    description:"mv"
+    description:"Counts"
      
   }
 ];

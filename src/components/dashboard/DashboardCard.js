@@ -19,7 +19,7 @@ const DashboardCard = props => {
       <CardMedia style={{ height: "150px" }}  />
       <CardContent>
         <Typography variant="body2" component="p">
-          {description}
+          
         </Typography>
       </CardContent>
     </Card>
