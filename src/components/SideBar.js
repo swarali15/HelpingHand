@@ -17,13 +17,6 @@ onBatteriesClick() {
     this.setState({showComponent: true});
   }
  
-accessBatery =()=>{
-    if(!this.setState.showComponent)
-        return;
-    else
-    this.refs.child.renderBattery();
-    
-}
 render() {
     
     return (
@@ -31,15 +24,9 @@ render() {
        <div className="sidebar-link">Dashboard</div>
        <div className="sidebar-link batteryId" onClick={this.onBatteriesClick}>Batteries</div>
        <div className="sidebar-link">Settings</div>
-        <Batteries ref='child'/>
     </div>      
   )
 }
-  }
-
-    
-
-
-            
+  }        
      
 export default SideBar
