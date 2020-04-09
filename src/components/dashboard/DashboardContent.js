@@ -3,7 +3,7 @@ import { Grid } from "@material-ui/core";
 import Data from "./Data";
 import DashboardCard from './DashboardCard'
 
-const Content = () => {
+const DashboardContent = () => {
   const getCard = batteryData => {
     return (
       <Grid item xs={12} sm={4}>
@@ -19,4 +19,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default DashboardContent;

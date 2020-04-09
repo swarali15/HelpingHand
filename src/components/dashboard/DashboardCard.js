@@ -5,8 +5,6 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-//import ShareIcon from "@material-ui/icons/Share";
 import { Avatar, IconButton, CardMedia } from "@material-ui/core";
 
 const DashboardCard = props => {

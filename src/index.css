@@ -57,9 +57,10 @@ body
     width: 70px;
     height: 9000px;
 }
-.batteries-container
-{   
-    
+.DashboardCard
+{   /*Going futile!!*/
+    margin-left: 100px;
+    padding: 100px;
    
 }
 .battery-link
