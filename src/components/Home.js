@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -11,6 +11,7 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Batteries from "./Batteries"
 import DashboardContent from './dashboard/DashboardContent';
 import DashBoard from './DashBoard.js'
+import Modal from "react-responsive-modal";
 import Navbar from './Navbar.js'
 import SideBar from './SideBar.js'
 import {
@@ -63,6 +64,23 @@ const useStylesDashboard = makeStyles((theme) => ({
   },
 }));
 
+////////////////////////////////
+    onOpenModal = () => {
+        this.setState({ sign: true });
+    };
+
+    onOpenModalLogin = () => {
+        this.setState({ login: true });
+    };
+
+    onCloseModal = () => {
+        this.setState({ sign: false });
+    };
+
+    onCloseModalclose = () => {
+        this.setState({ login: false });
+    };
+//////////////////////////////////
 export default function Home() {
     const classes = useStylesLogin();
   return (
@@ -121,6 +139,7 @@ export default function Home() {
 function Login() {
     const classes = useStylesLogin();
   return (
+      <Modal open={sign} onClose={this.onCloseModal}>
     <div>
     
       <div>
@@ -140,6 +159,7 @@ function Login() {
       </div>
   
     </div>
+      </Modal>
   );
 }
 
@@ -177,4 +197,4 @@ function Dashboardapp()
             
             </div>)
 
-}
+}*/

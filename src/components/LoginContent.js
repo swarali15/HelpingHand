@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStylesLogin = makeStyles((theme) => ({
@@ -15,8 +15,10 @@ class LoginContent extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
-      isGoing: true,
-      numberOfGuests: 2
+this.state = {
+            sign: false,
+            login: false,
+            }
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,6 +28,7 @@ class LoginContent extends React.Component {
 
   
     handleSubmit(event) {
+        this.setState({ sign: true });
     event.preventDefault();
   }
 handleNameChange(event) {
@@ -36,6 +39,11 @@ handleNameChange(event) {
   }
   render() {
     return (
+        
+        <div className="loginPage">
+        <div className="LoginBar">
+        Login
+        </div>
         <form onSubmit={this.handleSubmit} className='loginContent'>
         <label>
     Username
@@ -51,9 +59,12 @@ handleNameChange(event) {
   </label>
         <br/>
         <br/>
+        <center>
   <input class="loginBtn" className="loginBtn" type="submit" value="Login" />
+        </center>
       </form>
+        </div>
     );
   }
 }
-export default LoginContent;
+export default LoginContent;*/
