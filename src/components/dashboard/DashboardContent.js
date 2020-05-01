@@ -4,17 +4,18 @@ import Data from "./Data";
 import DashboardCard from './DashboardCard'
 
 const DashboardContent = () => {
-  const getCard = batteryData => {
+  const getCard = Data => {
     return (
-      <Grid item xs={12} sm={3}>
-        <DashboardCard {...batteryData} />
+        
+      <Grid item xs={6} sm={4}>
+        <DashboardCard {...Data} />
       </Grid>
     );
   };
 
   return (
     <Grid container spacing={10}>
-      {Data.map(batteryData => getCard(batteryData))}
+      {Data.map(Data => getCard(Data))}
     </Grid>
   );
 };

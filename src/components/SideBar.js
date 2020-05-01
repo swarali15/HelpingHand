@@ -22,7 +22,6 @@ render() {
     return (
     <div className="sidebar-container">
        <div className="sidebar-link">Dashboard</div>
-       <div className="sidebar-link batteryId" onClick={this.onBatteriesClick}>Batteries</div>
        <div className="sidebar-link">Settings</div>
     </div>      
   )

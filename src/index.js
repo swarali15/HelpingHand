@@ -5,9 +5,12 @@ import './index.css';
 import Login from './components/Login'
 import LoginContent from './components/LoginContent'
 import App from './components/App'
+import Visual from './components/dashboard/Visual'
 
-ReactDOM.render(
+
+ReactDOM.render(<div>
         <App />
+    <Visual/></div>
     ,
     document.getElementById("root"))
 
